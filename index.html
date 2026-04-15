@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>خدمات تقنية المعلومات | IT Solutions</title>
+  <meta name="description" content="حلول تقنية المعلومات المتكاملة: تطوير ويب، دعم فني، وأمن معلومات." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" id="home">
+    <div class="container header-inner">
+      <a href="#home" class="logo">IT Solutions</a>
+      <nav class="main-nav" id="mainNav">
+        <a href="#services">خدماتنا</a>
+        <a href="#it-library">مكتبة IT</a>
+        <a href="#ats-builder">بوابة ATS</a>
+        <a href="#about">عن الشركة</a>
+        <a href="#portfolio">أعمالنا</a>
+        <a href="#contact">تواصل معنا</a>
+      </nav>
+      <button class="mobile-toggle" id="mobileToggle" aria-expanded="false" aria-controls="mainNav" aria-label="فتح القائمة">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>حلول تقنية المعلومات الذكية لشركتك</h1>
+          <p>نقدم خدمات IT متكاملة تشمل تطوير الويب، الشبكات، الدعم الفني، وأمن المعلومات.</p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">اطلب استشارة مجانية</a>
+            <a href="#portfolio" class="btn btn-secondary">شاهد المشاريع</a>
+          </div>
+          <ul class="hero-points">
+            <li>فريق متخصص بخبرة عملية</li>
+            <li>حلول مخصصة لكل نشاط</li>
+            <li>دعم متواصل بعد التسليم</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="visual-card">
+            <h3>لوحة مؤشرات تقنية</h3>
+            <p>مراقبة الأداء، الحماية، والاستجابة في مكان واحد.</p>
+            <div class="bars">
+              <span style="width: 92%;"></span>
+              <span style="width: 84%;"></span>
+              <span style="width: 78%;"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <h2>خدماتنا المتخصصة</h2>
+          <p class="subtitle">خدمات تقنية متكاملة لتطوير أعمالك</p>
+        </div>
+
+        <div class="cards-grid">
+          <article
+            class="card card-interactive"
+            id="webDevelopmentCard"
+            role="button"
+            tabindex="0"
+            aria-expanded="false"
+            aria-controls="webDevelopmentPanel"
+          >
+            <h3>تطوير الويب</h3>
+            <p>تصميم وتطوير مواقع احترافية متوافقة مع جميع الأجهزة والمتصفحات.</p>
+            <span class="card-action">اضغط لعرض التفاصيل</span>
+          </article>
+          <article class="card">
+            <h3>أمن المعلومات</h3>
+            <p>تعزيز حماية الأنظمة والبيانات عبر حلول أمنية متقدمة وتقييم شامل.</p>
+          </article>
+          <article class="card">
+            <h3>الدعم الفني</h3>
+            <p>دعم سريع وفعال لضمان استمرارية العمل وتقليل الأعطال.</p>
+          </article>
+        </div>
+
+        <section class="service-panel" id="webDevelopmentPanel" hidden aria-label="تفاصيل تطوير الويب">
+          <div class="service-panel-copy">
+            <p class="service-panel-eyebrow">خدمة مفعلة</p>
+            <h3>حلول تطوير ويب متكاملة</h3>
+            <p>
+              ننفذ مواقع تعريفية، لوحات تحكم، متاجر إلكترونية، وصفحات هبوط سريعة مع توافق كامل
+              مع الجوال ومحركات البحث.
+            </p>
+            <ul class="service-panel-list">
+              <li>تصميم واجهات حديثة وسريعة</li>
+              <li>ربط النماذج وقواعد البيانات</li>
+              <li>تهيئة SEO وأداء الصفحات</li>
+            </ul>
+          </div>
+
+          <div class="service-panel-actions">
+            <a
+              class="btn btn-primary"
+              href="#contact"
+              data-project-template="أرغب في تنفيذ مشروع تطوير ويب وأحتاج عرضًا يشمل التصميم والبرمجة وربط النماذج."
+            >
+              ابدأ طلب تطوير ويب
+            </a>
+            <a class="btn btn-secondary" href="#portfolio">شاهد أمثلة المشاريع</a>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="section" id="it-library">
+      <div class="container">
+        <div class="section-header">
+          <h2>مكتبة IT الشاملة</h2>
+          <p class="subtitle">الكتب متوفرة لكل تخصصات IT مع مسارات مرتبة من البداية حتى الاحتراف</p>
+        </div>
+
+        <div class="it-library-grid">
+          <article class="it-book-card it-book-card-featured">
+            <h3>جميع تخصصات IT في مكان واحد</h3>
+            <p>
+              نوفر كتبًا ومراجع تغطي الشبكات، الأمن السيبراني، الأنظمة، السحابة، البرمجة،
+              تطوير الويب، قواعد البيانات، DevOps، تحليل البيانات، والدعم الفني.
+            </p>
+            <ul class="it-specialties-list">
+              <li>مسارات للمبتدئين</li>
+              <li>مراجع احترافية متقدمة</li>
+              <li>خطة كتب حسب كل تخصص</li>
+            </ul>
+            <a class="project-link" href="#contact" data-project-template="أرغب بالحصول على مكتبة كتب IT شاملة تشمل جميع التخصصات مع ترتيب واضح لكل مسار.">اطلب مكتبة جميع التخصصات</a>
+          </article>
+
+          <article class="it-book-card">
+            <h3>كتب الشبكات</h3>
+            <p>مسارات CCNA و TCP/IP وتصميم الشبكات وإدارة البنية التحتية.</p>
+            <a class="project-link" href="#contact" data-project-template="أرغب بالحصول على خطة تعلم كتب الشبكات (CCNA / TCP-IP / Routing).">اطلب خطة كتب الشبكات</a>
+          </article>
+
+          <article class="it-book-card">
+            <h3>كتب أمن المعلومات</h3>
+            <p>مراجع الاختبار الأمني، الحماية الدفاعية، وإدارة المخاطر السيبرانية.</p>
+            <a class="project-link" href="#contact" data-project-template="أحتاج قائمة كتب أمن المعلومات من مستوى مبتدئ إلى متقدم.">اطلب كتب الأمن السيبراني</a>
+          </article>
+
+          <article class="it-book-card">
+            <h3>كتب الأنظمة والخوادم</h3>
+            <p>Linux و Windows Server وإدارة الخدمات والنسخ الاحتياطي.</p>
+            <a class="project-link" href="#contact" data-project-template="أرغب بمكتبة كتب إدارة الأنظمة والخوادم مع ترتيب تدريجي.">اطلب كتب الأنظمة</a>
+          </article>
+
+          <article class="it-book-card">
+            <h3>كتب الحوسبة السحابية</h3>
+            <p>AWS و Azure و Google Cloud مع أساسيات الهندسة السحابية.</p>
+            <a class="project-link" href="#contact" data-project-template="أحتاج مسار كتب الحوسبة السحابية (AWS/Azure/GCP).">اطلب كتب السحابة</a>
+          </article>
+
+          <article class="it-book-card">
+            <h3>كتب البرمجة وتطوير الويب</h3>
+            <p>HTML و CSS و JavaScript و React و Python وواجهات برمجية للمشاريع الحديثة.</p>
+            <a class="project-link" href="#contact" data-project-template="أحتاج مسار كتب البرمجة وتطوير الويب من الأساسيات حتى بناء المشاريع العملية.">اطلب كتب البرمجة وتطوير الويب</a>
+          </article>
+
+          <article class="it-book-card">
+            <h3>كتب قواعد البيانات</h3>
+            <p>SQL وNoSQL، تحسين الأداء، النمذجة، وإدارة البيانات المؤسسية.</p>
+            <a class="project-link" href="#contact" data-project-template="أرغب بخطة كتب قواعد البيانات من الأساسيات حتى الاحتراف.">اطلب كتب قواعد البيانات</a>
+          </article>
+
+          <article class="it-book-card">
+            <h3>كتب DevOps والأتمتة</h3>
+            <p>Docker و Kubernetes و CI/CD وإدارة البنية ككود.</p>
+            <a class="project-link" href="#contact" data-project-template="أحتاج مصادر وكتب DevOps والأتمتة العملية للمشاريع.">اطلب كتب DevOps</a>
+          </article>
+
+          <article class="it-book-card">
+            <h3>كتب تحليل البيانات والدعم الفني</h3>
+            <p>Excel وPower BI وSQL التحليلي وإدارة الأعطال وخدمة المستخدمين والدعم التشغيلي.</p>
+            <a class="project-link" href="#contact" data-project-template="أرغب في مسار كتب تحليل البيانات والدعم الفني مع ترتيب مناسب لسوق العمل.">اطلب كتب التحليل والدعم الفني</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div>
+          <h2>عن شركتنا</h2>
+          <p>
+            نحن فريق من محترفي تقنية المعلومات نسعى لتقديم حلول مبتكرة تناسب احتياجات
+            الشركات والمؤسسات، مع تركيز دائم على الجودة والاعتمادية.
+          </p>
+          <ul class="features-list">
+            <li>استشارات تقنية متخصصة</li>
+            <li>تنفيذ مشاريع ناجحة وفق خطة واضحة</li>
+            <li>صيانة ومتابعة مستمرة</li>
+          </ul>
+        </div>
+        <aside class="about-box">
+          <h3>لماذا يختارنا العملاء؟</h3>
+          <p>نمزج بين الخبرة التقنية وفهم احتياجات السوق لنقدم نتائج ملموسة.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="security-specialties">
+      <div class="container">
+        <div class="section-header">
+          <h2>تخصصات أمن المعلومات</h2>
+          <p class="subtitle">خدمات أمنية متقدمة لكل جانب من جوانب الحماية الرقمية</p>
+        </div>
+
+        <div class="security-grid">
+          <article class="security-card">
+            <h3>اختبار الاختراق</h3>
+            <p>فحص أمني عملي لاكتشاف نقاط الضعف في التطبيقات والبنية التحتية قبل استغلالها.</p>
+            <a class="project-link" href="#contact" data-project-template="أرغب في خدمة اختبار اختراق شاملة لتقييم مستوى الأمان الحالي.">اطلب اختبار اختراق</a>
+          </article>
+
+          <article class="security-card">
+            <h3>تقييم الثغرات</h3>
+            <p>تحليل دوري للثغرات مع تقارير واضحة حسب مستوى الخطورة وخطة معالجة مفصلة.</p>
+            <a class="project-link" href="#contact" data-project-template="أحتاج تقييم ثغرات دوري مع تقرير مخاطر وخطة إغلاق الثغرات.">اطلب تقييم ثغرات</a>
+          </article>
+
+          <article class="security-card">
+            <h3>مركز عمليات أمنية SOC</h3>
+            <p>مراقبة مستمرة على مدار الساعة للتنبيهات الأمنية والاستجابة السريعة للحوادث.</p>
+            <a class="project-link" href="#contact" data-project-template="أرغب في تفعيل خدمة SOC للمراقبة الأمنية والاستجابة للحوادث.">اطلب خدمة SOC</a>
+          </article>
+
+          <article class="security-card">
+            <h3>الاستجابة للحوادث</h3>
+            <p>احتواء الحوادث الأمنية بسرعة، التحقيق في السبب الجذري، ومنع تكرار المشكلة.</p>
+            <a class="project-link" href="#contact" data-project-template="أحتاج خطة استجابة للحوادث الأمنية مع إجراءات احتواء وتحقيق.">اطلب الاستجابة للحوادث</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="portfolio">
+      <div class="container">
+        <div class="section-header">
+          <h2>نماذج أعمالنا</h2>
+          <p class="subtitle">مشاريع حققت أهدافًا واضحة</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project">
+            <h3>منصة شركات</h3>
+            <p>واجهة إدارية حديثة لإدارة العمليات والخدمات.</p>
+            <a class="project-link" href="#contact" data-project-template="أرغب في تنفيذ منصة شركات تشمل إدارة المستخدمين والخدمات.">ابدأ طلب منصة شركات</a>
+          </article>
+          <article class="project">
+            <h3>نظام دعم فني</h3>
+            <p>تنظيم طلبات الدعم وتتبع الاستجابة بشكل لحظي.</p>
+            <a class="project-link" href="#contact" data-project-template="أحتاج نظام دعم فني مع تذاكر ومتابعة حالة الطلبات.">ابدأ طلب نظام دعم فني</a>
+          </article>
+          <article class="project">
+            <h3>حل حماية شبكات</h3>
+            <p>تنفيذ ضوابط أمنية متقدمة للحد من المخاطر الرقمية.</p>
+            <div class="project-actions">
+              <a
+                class="project-link"
+                href="#contact"
+                data-project-template="أرغب في تقييم أمني للشبكة مع خطة حماية واضحة."
+              >
+                اطلب تحليل حماية الشبكات
+              </a>
+              <a
+                class="project-link project-link-ai"
+                href="https://chatgpt.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                افتح مساعد الذكاء الاصطناعي
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section ats-section" id="ats-builder">
+      <div class="container">
+        <div class="section-header">
+          <h2>بوابة السيرة الذاتية ATS</h2>
+          <p class="subtitle">اكتب بياناتك فقط وسنرتبها لك في نموذج سيرة ذاتية احترافي متوافق مع أنظمة الفرز ATS بدون رفع ملف CV</p>
+        </div>
+
+        <div class="ats-grid">
+          <form class="ats-form" id="atsForm">
+            <div class="ats-form-grid">
+              <div>
+                <label for="atsFullName">الاسم الكامل</label>
+                <input type="text" id="atsFullName" placeholder="مثال: محمد أحمد العتيبي" required />
+              </div>
+
+              <div>
+                <label for="atsJobTitle">المسمى المهني المستهدف</label>
+                <input type="text" id="atsJobTitle" placeholder="مثال: محلل أمن سيبراني" required />
+              </div>
+
+              <div>
+                <label for="atsEmail">البريد الإلكتروني</label>
+                <input type="email" id="atsEmail" placeholder="example@mail.com" required />
+              </div>
+
+              <div>
+                <label for="atsPhone">رقم الجوال</label>
+                <input type="text" id="atsPhone" placeholder="05xxxxxxxx" required />
+              </div>
+
+              <div>
+                <label for="atsCity">المدينة</label>
+                <input type="text" id="atsCity" placeholder="الرياض - السعودية" />
+              </div>
+
+              <div>
+                <label for="atsLinkedIn">لينكدإن أو رابط أعمال</label>
+                <input type="text" id="atsLinkedIn" placeholder="linkedin.com/in/username" />
+              </div>
+            </div>
+
+            <label for="atsSummary">الملخص المهني</label>
+            <textarea id="atsSummary" rows="4" placeholder="اكتب ملخصًا يوضح خبرتك، تخصصك، ونوع الفرص التي تستهدفها." required></textarea>
+
+            <label for="atsSkills">المهارات الأساسية</label>
+            <textarea id="atsSkills" rows="4" placeholder="اكتب كل مهارة في سطر مستقل. مثال:&#10;Network Security&#10;Incident Response&#10;Python&#10;SIEM"></textarea>
+
+            <label for="atsExperience">الخبرات العملية</label>
+            <textarea id="atsExperience" rows="6" placeholder="اكتب كل خبرة في سطر مستقل بهذا الشكل:&#10;شركة | المسمى الوظيفي | 2023 - 2025 | إنجاز أو مسؤولية رئيسية"></textarea>
+
+            <label for="atsEducation">التعليم</label>
+            <textarea id="atsEducation" rows="4" placeholder="اكتب كل مؤهل في سطر مستقل بهذا الشكل:&#10;اسم الجامعة | التخصص | سنة التخرج"></textarea>
+
+            <label for="atsCertificates">الشهادات والدورات</label>
+            <textarea id="atsCertificates" rows="4" placeholder="اكتب كل شهادة في سطر مستقل. مثال:&#10;Security+&#10;CCNA&#10;Google Data Analytics"></textarea>
+
+            <label for="atsKeywords">الكلمات المفتاحية للوظيفة</label>
+            <textarea id="atsKeywords" rows="3" placeholder="أضف الكلمات المهمة الموجودة في وصف الوظيفة المستهدفة لتحسين التوافق مع ATS."></textarea>
+
+            <div class="ats-actions">
+              <button type="submit" class="btn btn-primary">إنشاء السيرة الذاتية</button>
+              <button type="button" class="btn btn-secondary" id="atsCopyBtn">نسخ النص</button>
+              <button type="button" class="btn btn-secondary" id="atsDownloadBtn">تنزيل ملف TXT</button>
+            </div>
+
+            <p class="form-note" id="atsFormNote" role="status" aria-live="polite"></p>
+          </form>
+
+          <section class="ats-preview-wrap" aria-label="معاينة السيرة الذاتية">
+            <div class="ats-preview-header">
+              <div>
+                <p class="service-panel-eyebrow">نموذج ATS</p>
+                <h3>المعاينة الجاهزة</h3>
+              </div>
+              <span class="ats-badge">Plain Text Friendly</span>
+            </div>
+
+            <pre class="ats-preview" id="atsPreview">املأ النموذج ثم اضغط على "إنشاء السيرة الذاتية" لتظهر هنا نسخة ATS منظمة وجاهزة للنسخ أو التنزيل.</pre>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <h2>تواصل معنا</h2>
+          <p>جاهزون للإجابة على استفساراتك ومساعدتك في اختيار الحل الأنسب.</p>
+          <ul>
+            <li>البريد الإلكتروني: fdhb418@gmail.com</li>
+            <li>الهاتف: 0559 202 810</li>
+            <li>ساعات العمل: السبت - الخميس، 8:00 - 17:00</li>
+          </ul>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <label for="name">الاسم</label>
+          <input type="text" id="name" placeholder="أدخل اسمك" required />
+
+          <label for="email">البريد الإلكتروني</label>
+          <input type="email" id="email" placeholder="example@mail.com" required />
+
+          <label for="message">الرسالة</label>
+          <textarea id="message" rows="5" placeholder="اكتب استفسارك" required></textarea>
+
+          <button type="submit" class="btn btn-primary">إرسال الرسالة</button>
+          <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> IT Solutions. جميع الحقوق محفوظة.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
