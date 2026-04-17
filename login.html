@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تسجيل الدخول | IT Solutions</title>
+  <meta name="description" content="بوابة تسجيل الدخول إلى منصة IT Solutions." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+  <main class="login-shell">
+    <section class="brand-panel" aria-label="لوحة تعريف المنصة">
+      <a href="index.html" class="brand-home">العودة للواجهة الرئيسية</a>
+      <div class="brand-content">
+        <p class="eyebrow">IT SOLUTIONS ACCESS</p>
+        <h1>دخول آمن بتجربة فخمة</h1>
+        <p class="brand-copy">
+          منصة دخول مستقلة بالكامل عن الواجهة الرئيسية، مصممة لهوية احترافية مع حماية متعددة
+          وخطوات تحقق مرنة.
+        </p>
+        <ul class="highlights" aria-label="مزايا الدخول">
+          <li>تشفير الجلسات وطبقة أمان إضافية</li>
+          <li>مراجعة الأجهزة وتسجيل الأنشطة</li>
+          <li>دعم تسجيل الدخول السريع للفِرق</li>
+        </ul>
+      </div>
+      <div class="orb orb-one" aria-hidden="true"></div>
+      <div class="orb orb-two" aria-hidden="true"></div>
+    </section>
+
+    <section class="login-panel" aria-label="نموذج تسجيل الدخول">
+      <div class="login-card">
+        <div class="card-head">
+          <h2>تسجيل الدخول</h2>
+          <p>أدخل بياناتك للوصول إلى لوحة التحكم.</p>
+        </div>
+
+        <form id="loginForm" novalidate>
+          <label for="email">البريد الإلكتروني</label>
+          <input id="email" name="email" type="email" autocomplete="email" placeholder="you@itsoult.com" required />
+
+          <label for="password">كلمة المرور</label>
+          <input id="password" name="password" type="password" autocomplete="current-password" placeholder="********" required />
+
+          <div id="codeGroup" class="code-group" hidden>
+            <label for="verificationCode">رمز التحقق</label>
+            <input
+              id="verificationCode"
+              name="verificationCode"
+              type="text"
+              inputmode="numeric"
+              pattern="[0-9]{6}"
+              maxlength="6"
+              placeholder="أدخل رمز 6 أرقام"
+            />
+          </div>
+
+          <div class="row-tools">
+            <label class="remember-wrap" for="rememberMe">
+              <input id="rememberMe" name="rememberMe" type="checkbox" />
+              <span>تذكرني</span>
+            </label>
+            <a href="#" class="help-link" aria-label="استرجاع كلمة المرور">نسيت كلمة المرور؟</a>
+          </div>
+
+          <button id="loginBtn" type="submit">إرسال رمز التحقق</button>
+          <button id="resendCodeBtn" class="ghost-btn" type="button" hidden>إعادة إرسال الرمز</button>
+          <p id="loginNote" class="login-note" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="divider" aria-hidden="true"><span>أو</span></div>
+
+        <section class="register-block" aria-label="إنشاء حساب جديد">
+          <h3>إنشاء حساب جديد</h3>
+          <p>سجّل حسابك ثم ارجع للأعلى لتسجيل الدخول برمز التحقق.</p>
+
+          <form id="registerForm" novalidate>
+            <label for="registerFullName">الاسم الكامل</label>
+            <input id="registerFullName" name="registerFullName" type="text" autocomplete="name" placeholder="اكتب اسمك الكامل" required />
+
+            <label for="registerEmail">البريد الإلكتروني</label>
+            <input id="registerEmail" name="registerEmail" type="email" autocomplete="email" placeholder="you@example.com" required />
+
+            <label for="registerPassword">كلمة المرور</label>
+            <input id="registerPassword" name="registerPassword" type="password" autocomplete="new-password" placeholder="8 أحرف أو أكثر" required />
+
+            <button id="registerBtn" type="submit" class="ghost-btn">إنشاء الحساب</button>
+            <p id="registerNote" class="login-note" role="status" aria-live="polite"></p>
+          </form>
+        </section>
+
+        <button class="secondary-btn" type="button">متابعة عبر Microsoft</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="login.js"></script>
+</body>
+</html>
